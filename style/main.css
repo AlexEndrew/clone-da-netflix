@@ -1,0 +1,104 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /* elementos nao ultrapassam a caixa*/
+
+}
+   
+/* elementos base */
+
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+
+header .container{ 
+    
+    display:flex;     /* alinha elementos em tela*/
+    flex-direction: row;
+    align-items: center; /*alinha vertical*/
+    justify-content: space-between;  /* deu espaço entre h2 e as tags 'nav' podia ser start ou end  da espaço entre elementos pela horizontal*/
+
+
+}
+
+
+
+
+header .logo{
+
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{   /* toda vez q o mouse passar em cima muda a cor p/ */
+    color: #fff;
+}
+
+/* filme principal */
+
+.filme-principal{
+    font-size :16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-house.jpg'); /* linear gradient cria uma camada mais escura na img pra dar pra ler melhor o que ta escrito em cima*/
+    height:800px;
+    background-size:cover; /* ela cobre a area perfeita da caixa ao inves do tamanho da img original */
+
+    display:flex;
+    flex-direction: column; /*os botoes ficaram como colunas*/
+    justify-content: center; /*vai centralizar na vertical pois segue a direcao do flex direction q setei como vertical */
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {    /*distanciamento entre titulo e botoes*/
+    margin-top:  10px;
+    margin-bottom: 40px;
+
+}
+
+.titulo{
+    margin-top: 5%;
+    font-size:50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+
+    /*os botoes tao muito grudados com a caixa ai vai usar padding */
+
+    padding:15px 30px; /* 1º valor p cime/baixo e 2º p esquerda e direita */
+    margin-right: 30px;
+    font-size: 12px;
+
+    cursor: pointer; /*seta do mouse em cima do botao vira mausinha clicavel */
+    transition: .3s ease all; /*transicao de mudança qnd passa mouse em cima do botao p mudar cor dele demora mais */
+
+}
+
+.botao:hover{   /* passar mouse por cima do botao deixa ele branco */
+    background-color:white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
