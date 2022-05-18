@@ -102,3 +102,18 @@ header nav a:hover{   /* toda vez q o mouse passar em cima muda a cor p/ */
 .botao i{
     margin-right: 8px;
 }
+
+.container{
+    margin-left: 200px;
+    margin-right:200px;
+}
+
+.filme-principal .container{   /* so a classe container dentro de filme principal vai ser alterada */
+    width: 70%;            /*limitação de largura de 70% quando a tela ficar menor ele tem a deinicao de largura de no max 70% o texto nao ultrapassa o lado da tela ele fica centralizado */
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
