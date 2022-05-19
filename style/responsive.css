@@ -1,0 +1,29 @@
+/*ate 700 px vai aplicar a formatacao, acima nao precisa mais */
+
+@media screen and (max-width: 700px) {
+
+    header .container {
+        display: flex;
+        flex-direction: column; /*ele joga pra baixo se nao couber*/
+
+    }
+    
+    .botao{
+        margin-top: 5px;
+        width: 190px ;
+        height: 60px;
+    }
+}
+/* se a tela aumentar dps de 1000px ele aplica abaixo
+faz o texto ficar com largura de no max 50% da tela, ele nao espalha na tela toda */
+
+
+@media screen and (min-width: 1000px) {
+    
+
+    .descricao{
+        width: 50%;
+    }
+
+
+}
